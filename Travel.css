@@ -1,0 +1,302 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+.topheader{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: rgba(243, 245, 247, 0.509)
+}
+.topheader h3{
+    font-size: 15px;
+}
+.topheader p{
+    font-size: small;
+}
+.contact{
+    display: flex;
+    align-items: flex-end;
+    margin-left: 20px;
+    align-items: center;
+    position: relative;
+    left:-15px;
+    width:500px;
+    justify-content:space-around;    
+}
+.topheader img:hover{
+cursor: pointer;
+}
+
+.main{
+    background-image: linear-gradient(45deg,
+    rgba(64, 107, 236, 0.75),
+    rgba(91, 111, 243, 0.75)) ,url(/images/pexels-asad-photo-maldives-2549018\ \(2\).jpg);
+    background-size: cover;
+    height:80vh;
+    background-position: 30%;
+    padding: 15px;
+}
+.main div{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    color: white;
+}
+.navbar ul{
+list-style: none;
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 450px;
+color: white;
+font-weight: 700;
+}
+.activenav{
+font-size: 18px;
+}
+.navbar input{
+    height: 30px;
+    width: 200px;
+    border-radius: 10px;
+    border: none;
+}
+.contactbtn button{
+    background-color: rgb(242, 11, 11);
+    width:90px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+}
+.maintext{
+    flex-direction: column;
+   justify-content: center;
+   position:absolute;
+   text-align: center;
+   left:30%;
+   top:30%;
+   width: 500px;
+   height: 200px;
+   font-size: 30px;
+   color: white;
+   align-items: center;
+}
+.maintext p h2{
+    padding: 40px;
+}
+.maintext button{
+    width: 250px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(240, 12, 46);
+    color: white;
+
+}
+.famousdestinations{
+    margin: 25px;
+    text-align: center;
+    padding: 50px;
+    background-color: rgb(16, 1, 1);
+    background-color: rgb(225, 245, 246);
+    color: black;
+}
+.eventsimages{
+    display:flex ;
+    justify-content:space-around;
+    text-align: center;
+    padding: 30px;
+}
+
+.famousdestinations h2{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    color: rgb(241, 17, 17);
+    font-weight: bolder;
+}
+.img1 ,.img2,.img3, h3{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 10px;
+}
+.img1,.img2.img3,img{
+    border-radius: 20px;
+}
+.header li:hover, button:hover, .famousdestinations img:hover{
+    transform: scale(1.1);
+    transition: transform ease 200ms;
+    cursor: pointer;
+}
+
+.tours{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+   
+}
+.toursimg{
+    width: 700px;    
+}
+.tourstext{
+    text-align:center;
+    padding: 100px;
+    font-size: 20px;
+    font-family:monospace
+}
+.tourstext p{
+padding: 10px;
+}
+.tourstext button{
+    width: 100px;
+     padding: 5px;
+     background-color: white;
+     border-radius: 100px;
+     font-family: cursive;
+}
+
+.sidebar{
+    background-color: rgb(232, 54, 54);
+    position: absolute;
+    height: 255px;
+    width: 150px;
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0  20px 20px 0;
+    color:white;  
+    top:55px
+       
+    }
+
+.sidebar li{
+    margin-top: 30px;
+    cursor: pointer;
+}
+.menuicon{
+    position: absolute;
+    padding:5px;
+    display: none;
+    top:51px;
+    cursor: pointer;
+} 
+
+@media (max-width:650px)
+{ 
+   .eventsimages
+   {
+    flex-direction: column;
+   } 
+   .navbar li{
+    display: none;
+   }
+   .navbar input{
+    position: relative;
+    left:50px;
+    width: 150px;
+   }
+   .contactbtn{
+    position: relative;
+    left:-200px;
+   }
+   .tours{
+    justify-content: space-around;
+   }
+   .maintext{
+    width:220px;
+    margin-top: 20px;
+    
+    height: 270px;
+   }
+   .maintext button{
+    margin-top: 10px;
+    height: 300px;
+   }
+   .eventsimages img{
+   width:300px;
+   }
+   
+   .famousdestinations img
+   {
+    position: relative;
+    left:-25px
+   }
+  .toursimg img{
+   position: relative;
+   left:-70px
+  }
+  .tourstext{
+    font-size: 15px;
+   position: relative;
+   left:-25px
+  }
+  .tours{
+
+    width: 483px;
+   
+  }
+  .img3 img{
+    width:390px;
+    position: relative;
+    left:-38.5px
+   }
+   .eventsimages{
+    position: relative;
+    left:5px
+   }
+   .main{
+    width:485px;
+    background-size: cover;
+   }
+   .contact img{
+    margin-left: 3px;
+   }
+   
+.menuicon{
+    display:flex;
+}
+
+.toursimg img{ 
+transition: transform .3s ease 
+}
+   
+}
+
+
+/* .customers{
+    display: flex;
+    margin: 50px;
+}
+.happycustomers div{
+    padding:10px;
+    margin: 10px;
+}
+.customers div{
+    border: 1px solid grey;
+    border-radius: 10px;
+    background-color: rgb(253, 246, 178);
+}
+.happycustomers div p{
+    padding: 10px;
+}
+.happycustomers h2{
+    text-align: center;
+    font-size: 35px;
+    padding: 10px;
+    margin: 10px;
+}
+.happycustomers{
+    border: 1px pink solid;
+    margin: 15px;
+} */
+
+
+
+
+
+
+
